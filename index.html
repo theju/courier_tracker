@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Track your courier</title>
+    <meta name="description" content="Track Your Courier">
+    <meta name="author" content="Thejaswi Puthraya">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div class="content">
+      <div class="afl">
+	<h3>AFL</h3>
+	<form method="get" action="http://trackntrace.aflwiz.com/Wiz_Summary.jsp" target="_new">
+	  <input type="text" name="shpntnum" value="" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="blue_dart">
+	<h3>Blue Dart</h3>
+	<form method="post" action="http://www.bluedart.com/servlet/RoutingServlet" target="_new">
+	  <input type="hidden" name="handler" value="tnt" >
+	  <input type="hidden" name="action" value="awbquery" >
+	  <input type="hidden" name="awb" value="awb" >
+	  <input type="text" name="numbers" value="" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="dhl">
+	<h3>DHL</h3>
+	<form method="get" action="http://dhl.co.in/content/in/en/express/tracking.shtml" target="_new">
+	  <input type="text" name="AWB" value="" >
+	  <input type="hidden" name="brand" value="DHL" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="dtdc">
+	<h3>DTDC</h3>
+	<form method="post" action="http://www.dtdc.in/dtdcTrack/Tracking/consignInfo.asp" target="_new">
+	  <input type="hidden" name="GES" value="" >
+	  <input type="hidden" name="action" value="track" >
+	  <input type="hidden" name="sec" value="tr" >
+	  <input type="hidden" name="Ttype" value="cnno" >
+	  <input type="text" name="strCnno" value="" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="fedex">
+	<h3>FedEx</h3>
+	<form method="post" action="http://www.fedex.com/Tracking" target="_new">
+	  <input type="text" name="tracknumbers" value="" >
+	  <input type="hidden" name="action" value="track" >
+	  <input type="hidden" name="language" value="english" >
+	  <input type="hidden" name="cntry_code" value="in" >
+	  <input type="hidden" name="mps" value="y" >
+	  <input type="hidden" name="ascend_header" value="1" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="first_flight">
+	<h3>First Flight</h3>
+	<form method="post" action="http://www.firstflight.net/track.asp" target="_new">
+	  <input type="text" name="txtcon_no" value="" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="professional">
+	<h3>Professional</h3>
+	<form method="get" action="http://tpcindia.com/track.aspx" target="_new">
+	  <input type="text" name="id" value="" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="trackon">
+	<h3>Trackon</h3>
+	<form method="post" action="http://trackoncourier.com/Default.aspx" target="_new">
+	  <input type="text" name="ctl00$txtTrack" value="" >
+	  <input type="hidden" name="ctl00$ddl" value="India" >
+	  <input type="hidden" name="ctl00$txtUsername" value="" >
+	  <input type="hidden" name="ctl00$txtPassword" value="" >
+	  <input type="hidden" name="ctl00$btnTrackMaster.x" value="14" >
+	  <input type="hidden" name="ctl00$btnTrackMaster.y" value="5" >
+	  <input type="hidden" name="__EVENTVALIDATION" value="/wEWCgKJ4fyVDQL32/OTDAKB7cu1BQLnrI+ZDwLZje6sDAKt04gXAsi5gKoBAuqWv/sJAoim8u4FAs6wzZEDoiAKycXEZzdUNO1eeohLfwiVNPI=" />
+	  <input type="hidden" name="__VIEWSTATE" value="/wEPDwUJNDczMzI3NTY3D2QWAmYPZBYCAgMPZBYEAgEPDxYCHgRUZXh0ZWRkAhEPZBYEAgEPDxYCHwAFtQVLaW5kbHkgbm90ZSB0aGF0LCBkdWUgdG8gb25nb2luZyBUUkFJTklORyBTRVNTSU9OLCBEZWxoaSBILk8uIGN1c3RvbWVyY2FyZSB3aWxsIGJlIGNsb3NlZCBiZXR3ZWVuIDE3MDAgaHJzIHRvIDE4MDAgaHJzIHVwIHRvIDMwdGggQXByaWwgMjAxMg0KSWYgaW5jYXNlIG9mIGVtZXJnZW5jeSB5b3UgY2FuIHNlbmQgYSBFbWFpbCB0byBjdXN0b21lcmNhcmUgQHRyYWNrb25jb3VyaWVyLmNvbQ0KPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09DQpQYXJjZWxzIGZvciBOZXBhbCB3b3VsZCBub3QgYmUgZm9yd2FyZGVkIGZyb20gRGVsaGkgSHViIHdpdGhvdXQgSW52b2ljZS4NCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ0KUGFyY2VscyBmb3IgSGltYWNoYWwgUHJhZGVzaCB3aXRob3V0IFRJTiBOdW1iZXIgb24gSW52b2ljZSB3aWxsIG5vdCBiZSBmb3J3YXJkZWQgZnJvbSBEZWxoaS1IdWIuDQo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0NClNhbGVzIFRheCBhdXRob3JpdGllcyBhdCBCaG9wYWwgYW5kIEluZG9yZSBoYXZlIHN0cmljdGx5IGFubm91bmNlZCB0byBzZWl6ZSBwYXJjZWxzIGVudGVyaW5nIGNpdHkgd2l0aG91dCBlbmRvcnNpbmcgRm9ybS02MC4gU2FsZXMgVGF4IGZvcm0gaGFzIHRvIGJlIGVuZG9yc2VkIGZyb20gc2FsZXMgdGF4IG9mZmljZSBiZWZvcmUgZW50ZXJpbmcgY2l0eS5kZAIDDw8WAh8ABbodPHAgc3R5bGU9InRleHQtYWxpZ246IGp1c3RpZnkiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTogQXJpYWw7IGZvbnQtc2l6ZTogMTBwdCI+U2Vhc29uZWQgcHJvbW90ZXJzICZhbXA7IG1hbmFnZXJzIG9mIFRyYWNrb24gaGF2ZSB3ZWF0aGVyZWQgdGhlIGNvdXJpZXIgaW5kdXN0cnkgZm9yIHdlbGwgb3ZlciAyMCB5ZWFycyBieSBjb3VyaWVyaW5nIGFsbCBzaGFkZXMgb2YgZW1vdGlvbnMgaS5lLiBlbW90aW9uYWwsIGZpbmFuY2lhbCwgYnVzaW5lc3MgcHJvbW90aW9uYWwsIGluZHVzdHJpYWwgc29jaWFsICZhbXA7IGVkdWNhdGlvbmFsLiBPdXIgZmllbGQgc3RhZmYgaW4gbGVhZ3VlIHdpdGggUiAmYW1wOyBEIGhhcyBpbm5vdmF0ZWQgc3RyYXRlZ2llcyB0byBtYWtlIFRyYWNrb24gc3RhbmQgb3V0IGFzIFN1cGVyIFNhcHBlcnMuIDxwPjwvcD4NCjwvc3Bhbj48L3A+DQo8cCBzdHlsZT0idGV4dC1hbGlnbjoganVzdGlmeSI+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbDsgZm9udC1zaXplOiAxMHB0Ij5TaW5jZSBUcmFja29u4oCZcyBpbnRyb2R1Y3Rpb24gdG8gY291cmllciBpbmR1c3RyeSBpbiAyMDA1LCBvdXIgZXZlciBpbmNyZWFzaW5nIGNsaWVudGVsZSBoYXMgcHVzaGVkIG91ciBzYWxlcyB3aXRoIGdhbGxvcGluZyBzcGVlZC4gSGF2aW5nIHJlYWNoZWQgZnJvbSBSdXBlZXMgMjQzIG1pbGxpb24gKDIwMDUtMDYpIHRvIGFsbW9zdCAzIGZvbGQgaW4gNnRoIHllYXIgKDIwMTAtMTEpIHRvIG92ZXIgUnVwZWVzIDg1MCBNaWxsaW9uLiA8cD48L3A+DQo8L3NwYW4+PC9wPg0KPHAgc3R5bGU9InRleHQtYWxpZ246IGp1c3RpZnkiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTogQXJpYWw7IGZvbnQtc2l6ZTogMTBwdCI+VGhlIHBoZW5vbWVuYWwgZ3Jvd3RoIGZvcmNlZCB1cyB0byBkb3QgdGhlIHZlbmRpbmcgY2VudGVycyBhdCBhbGwgdGhlIHN0cmF0ZWdpYyBwb2ludHMgaW4gYW5kIGFyb3VuZC4gV2l0aCB0aGUgYWRkaXRpb24gb2Ygc3VwZXIgaGlnaHdheXMgYW5kIGFpcndheXMsIHdlIGFyZSBhbHJlYWR5IGZlZWxpbmcgdGhlIG5lZWQgdG8gZnVydGhlciBhZGQgdG8gdGhlIHByZXNlbnQgc3RyZW5ndGggb2Ygb3ZlciAyMDAwIG91dGxldHMgbmF0aW9ud2lkZS4gPHA+PC9wPg0KPC9zcGFuPjwvcD4NCjxwIHN0eWxlPSJ0ZXh0LWFsaWduOiBqdXN0aWZ5Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6IEFyaWFsOyBmb250LXNpemU6IDEwcHQiPk91ciBpbmZyYXN0cnVjdHVyYWwgc3RyZW5ndGggb2YgbW9yZSB0aGFuIDEyMDAwIHN0YWZmZXJzIG9uIGFuIGF2ZXJhZ2UgaGFuZGxlIGFwcHJveGltYXRlbHkgMTgwMDAwIHNtYWxsIGFuZCBtZWRpdW0gcGFja2FnZXMgcGVyIGRheSB3aXRoIGluIG91ciBuZXR3b3JrLiA8cD48L3A+DQo8L3NwYW4+PC9wPg0KPHAgc3R5bGU9InRleHQtYWxpZ246IGp1c3RpZnkiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTogQXJpYWw7IGZvbnQtc2l6ZTogMTBwdCI+SW4gYW4gZWZmb3J0IHRvIGlubm92YXRlIGFuZCBpbXByb3ZlIG91ciBzZXJ2aWNlcyDigJMgVHJhY2tvbiBpbiBNYXnigJkgMjAxMCBsYXVuY2hlZCBpdHMgc3VwZXIgcHJvZHVjdCDigJxQcmltZSBUcmFja+KAnSDigJMgYW4gZXhwcmVzcyBzZXJ2aWNlIG9uIHNlbGVjdCByb3V0ZXMuIFBoZW5vbWVuYWwgc3VjY2VzcyBvZiBuZXcgcHJvZHVjdCBpbiBsZXNzIHRoYW4gYSB5ZWFyIGlzIHdvcnRoIHNoYXJpbmcgd2l0aCBvdXIgY2xpZW50cyBvbiB0d28gY291bnRzOiBvbmUgb3VyIHN0cmF0ZWdpYyBhbmQgc3VwcG9ydCBzdGFmZiBzdWNjZXNzZnVsbHkgaGFuZGxlZCBtb3JlIHRoYW4gMjAwMDAwIHBhY2thZ2VzIGFuZCB0d28gdGhleSBkaWQgc28gd2l0aCBuZWdsaWdpYmxlIGZhaWx1cmUgcmF0aW8uIEluIHB1cnN1aXQgb2Ygb3VyIHN1Y2Nlc3MgYW5kIHlvdXIgZmFpdGggaW4gb3VyIHNlcnZpY2Ugd2UgYXJlIGNvbnRpbnVvdXNseSBleHRlbmRpbmcg4oCcUHJpbWUgVHJhY2vigJ0gc2VydmljZXMgdG8gbW9yZSBzdHJhdGVnaWMgY2l0aWVzIHJhcGlkbHkuIDxwPjwvcD4NCjwvc3Bhbj48L3A+DQo8cCBzdHlsZT0idGV4dC1hbGlnbjoganVzdGlmeSI+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbDsgZm9udC1zaXplOiAxMHB0Ij5UcmFja29uIGtub3dzIHRoYXQgb3VyIHNoaXBwZXJzIGhhdmUgYSBicm9hZCByYW5nZSBvZiByZXF1aXJlbWVudHMgYW5kIG91ciBjaGFsbGVuZ2UgY2xlYXJseSBpcyB0byByZXNwb25kIGFuZCB3ZSBhbHdheXMgZG8gaXQuIDxwPjwvcD4NCjwvc3Bhbj48L3A+DQo8cCBzdHlsZT0idGV4dC1hbGlnbjoganVzdGlmeSI+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbDsgZm9udC1zaXplOiAxMHB0Ij5DdXN0b21lcuKAmXMgcGxlYXN1cmUgaXMgdGhlIGRlbGlnaHQgd2UgYWx3YXlzIGNoZXJpc2guIEFnZ3Jlc3NpdmUgY3VzdG9tZXIgd2l0aCBzdWdnZXN0aXZlIGF0dGl0dWRlIGhlbHBzIHVzIGFjaGlldmUgdGhlIGNvbW1vbiBnb2FsIGkuZS4gU3VjY2VzcyB0byBnbG9yeS4gPHA+PC9wPg0KPC9zcGFuPjwvcD4NCjxwIHN0eWxlPSJ0ZXh0LWFsaWduOiBqdXN0aWZ5Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6IEFyaWFsOyBmb250LXNpemU6IDEwcHQiPlRyYWNrb24gaXMgYSBzdGVwIGFoZWFkIOKApi4uIGFuZCBhbHdheXMuIDxwPjwvcD4NCjwvc3Bhbj48L3A+DQo8cCBzdHlsZT0idGV4dC1hbGlnbjoganVzdGlmeSI+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OiBBcmlhbDsgZm9udC1zaXplOiAxMHB0Ij48YnIgLz4NCiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyBUcmFjayB0aGUgc3RhdHVzIG9mIHlvdXIgc2hpcG1lbnRzIHRocm91Z2ggb3VyIHNpdGUgPHA+PC9wPg0KPC9zcGFuPjwvcD4NCjxwPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTogQXJpYWw7IGZvbnQtc2l6ZTogMTBwdCI+Jm5ic3A7PHA+PC9wPg0KPC9zcGFuPjwvcD4NCjxwIHN0eWxlPSJ0ZXh0LWFsaWduOiBqdXN0aWZ5Ij48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6IEFyaWFsOyBmb250LXNpemU6IDEwcHQiPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOzxhIGhyZWY9Imh0dHA6Ly93d3cudHJhY2tvbmNvdXJpZXJzLmNvbS8iPnd3dy50cmFja29uY291cmllcnMuY29tPC9hPiA8cD48L3A+DQo8L3NwYW4+PC9wPg0KPHAgY2xhc3M9Ik1zb05vcm1hbCIgc3R5bGU9Im1hcmdpbjogMGluIDBpbiAwcHQiPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTogQXJpYWw7IGZvbnQtc2l6ZTogMTBwdCI+PHA+Jm5ic3A7PC9wPg0KPC9zcGFuPjwvcD5kZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUOY3RsMDAkYnRuTG9naW4FFGN0bDAwJGJ0blRyYWNrTWFzdGVyLWfD+uY9DqZgObQe18EyRvTQygs=" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="safexpress">
+	<h3>Safexpress</h3>
+	<form method="get" action="http://www.safexpress.com/shipment_inq.aspx" target="_new">
+	  <input type="text" name="sno" value="" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+      <div class="tnt">
+	<h3>TNT</h3>
+	<form method="post" action="http://www.tnt.com/webtracker/tracker.do" target="_new">
+	  <input type="hidden" name="navigation" value="1" >
+	  <input type="hidden" name="respLang" value="en" >
+	  <input type="hidden" name="respCountry" value="in" >
+	  <input type="hidden" name="genericSiteIdent" value="" >
+          <input type="hidden" name="respCountry" value="in" >
+          <input type="hidden" name="respLang" value="en" >
+          <input type="hidden" name="navigation" value="1" >
+          <input type="hidden" name="page" value="1" >
+          <input type="hidden" name="sourceID" value="1" >
+          <input type="hidden" name="sourceCountry" value="ww" >
+          <input type="hidden" name="plazaKey" value="" >
+          <input type="hidden" name="refs" value="" >
+          <input type="hidden" name="requesttype" value="GEN" >
+	  <input type="hidden" name="searchType" value="CON" >
+	  <input type="text" name="cons" value="" >
+	  <input type="submit" value="Track" >
+	</form>
+      </div>
+    </div>
+  </body>
+</html>
